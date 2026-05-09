@@ -7,7 +7,6 @@ A C-based tool for reading and parsing the metadata of a `.bmp` file. This proje
 * **Binary Parsing**: Directly reads `.bmp` file headers into memory.
 * **Memory Alignment**: Implements compiler directives to match real-world binary layouts.
 * **Hexadecimal & Decimal Output**: Displays file metadata in human-readable formats.
-* **Resource Efficiency**: Uses minimal memory and standard C libraries.
 
 ### Key Components
 
