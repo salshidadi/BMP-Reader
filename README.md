@@ -9,10 +9,6 @@ A C-based tool for reading and parsing the metadata of a `.bmp` file. This proje
 * **Hexadecimal & Decimal Output**: Displays file metadata in human-readable formats.
 * **Resource Efficiency**: Uses minimal memory and standard C libraries.
 
-## Technical Implementation
-
-The project addresses the "Structure Padding" behavior of C compilers. Because the BMP header contains a 2-byte signature followed by a 4-byte integer, a standard struct would insert a 2-byte gap to align the memory. This tool overrides that behavior to ensure byte-perfect mapping.
-
 ### Key Components
 
 * **`#pragma pack(push, 1)`**: Disables data alignment gaps to ensure the struct size is exactly 6 bytes (2 for signature + 4 for size).
